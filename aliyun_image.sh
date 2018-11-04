@@ -11,3 +11,6 @@ do
    docker rmi  -f $(docker images |grep registry.cn-shenzhen.aliyuncs.com |awk '{print $1":"$2}')
 
 done
+docker pull registry.cn-shenzhen.aliyuncs.com/lurenjia/flannel:v0.10.0-amd64
+docker  tag  registry.cn-shenzhen.aliyuncs.com/lurenjia/flannel:v0.10.0-amd64    quay.io/coreos/flannel：v0.10.0-amd64
+docker rmi -f registry.cn-shenzhen.aliyuncs.com/lurenjia/flannel:v0.10.0-amd64
