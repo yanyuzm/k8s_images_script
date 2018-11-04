@@ -1,7 +1,7 @@
 #!/bin/bash
 #这是dockerhub上的镜像，v1.12.2版本
 
-images=(kube-apiserver:v1.12.2 kube-controller-manager:v1.12.2 kube-scheduler:v1.12.2 kube-proxy:v1.12.2 pause:3.1 etcd:3.2.24 coredns:1.2.2 k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.0)
+images=(kube-apiserver:v1.12.2 kube-controller-manager:v1.12.2 kube-scheduler:v1.12.2 kube-proxy:v1.12.2 pause:3.1 etcd:3.2.24 coredns:1.2.2 kubernetes-dashboard-amd64:v1.10.0)
 images2=flannel:v0.10.0-amd64
 for ima in ${images[@]}
 do
